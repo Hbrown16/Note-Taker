@@ -28,4 +28,8 @@ Router.post('/notes', (req, res) => {
 Router.delete("/notes/:id", (req, res) => {
     const removeNote = req.params.id;
     console.log(removeNote);
+    const newArr = notes.filter(note => note.id !== removeNote)
+    fs.writeFile('../db.json', JSON.stringify(newArr), err => {
+        notes = newArrres.sendStatus(200)
+    })
 })
