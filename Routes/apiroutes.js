@@ -3,3 +3,6 @@ const fs = require('fs')
 
 let nates = require('')
 
+// Get current notes
+
+
