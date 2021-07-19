@@ -18,3 +18,9 @@ app.use(express.static("public"));
 
 app.use("/", require("./Routes/HTMLroutes"));
 app.use("/api", require("./Routes/apiroutes"));
+
+//Listener
+
+app.listen(PORT, function() {
+    console.log(`APP listening on PORT ${PORT}`);
+});
