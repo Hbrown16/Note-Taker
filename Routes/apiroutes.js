@@ -23,3 +23,9 @@ Router.post('/notes', (req, res) => {
         res.sendStatus(200)
     })
 })
+
+// This function allows you to delete notes
+Router.delete("/notes/:id", (req, res) => {
+    const removeNote = req.params.id;
+    console.log(removeNote);
+})
