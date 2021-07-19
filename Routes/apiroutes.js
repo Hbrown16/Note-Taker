@@ -1,7 +1,7 @@
 const { router } = require('express').Router()
 const fs = require('fs')
 
-let nates = require('../db.json')
+let notes = require('../db/db.json')
 
 // Get current notes
 Router.get('/notes', (req, res) => {
@@ -18,7 +18,7 @@ Router.post('/notes', (req, res) => {
         newNote.id = 1
     }
     notes.push(newNote)
-    fs.writeFile('../db.json', JSON.stringify(notes), err => {
+    fs.writeFile('../db/db.json', JSON.stringify(notes), err => {
         console.log(err)
         res.sendStatus(200)
     })
@@ -29,7 +29,7 @@ Router.delete("/notes/:id", (req, res) => {
     const removeNote = req.params.id;
     console.log(removeNote);
     const newArr = notes.filter(note => note.id !== removeNote)
-    fs.writeFile('../db.json', JSON.stringify(newArr), err => {
+    fs.writeFile('../db/db.json', JSON.stringify(newArr), err => {
         notes = newArrres.sendStatus(200)
     })
 })
