@@ -1,4 +1,4 @@
-const { Router } = require('express').Router()
+const { router } = require('express').Router()
 const fs = require('fs')
 
 let nates = require('../db.json')
@@ -33,3 +33,5 @@ Router.delete("/notes/:id", (req, res) => {
         notes = newArrres.sendStatus(200)
     })
 })
+
+module.exports = router;
