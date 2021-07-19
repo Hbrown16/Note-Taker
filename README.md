@@ -1,11 +1,10 @@
 # Note-Taker
 
 ## Table of Contents
-1.
-2.
-3.
-4.
-
+1. Acceptance Criteria
+2. Assignment Description
+3. Demo
+4. Helpful Links
 
 ## Acceptance Criteria
 
@@ -26,6 +25,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ```
 
 ## Assignment Description
+
 
 ## Demo
 
