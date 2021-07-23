@@ -1,10 +1,12 @@
 # Note-Taker
 
+[Note-Taker-Link](https://rocky-dawn-47436.herokuapp.com/)
+
 ## Table of Contents
-1. Acceptance Criteria
-2. Assignment Description
-3. Demo
-4. Helpful Links
+1. [Acceptance-Criteria](##Acceptance-Criteria)
+2. [Assignment-Description](##Assignment-Description)
+3. [Demo](##Demo)
+4. [Helpful-Links](##Helpful-Links)
 
 ## Acceptance Criteria
 
@@ -25,8 +27,8 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ```
 
 ## Assignment Description
-
+This is assignment we were to create a code for a Note Taker application using node.js and package.json files. We were then instructed to run it through heroku to start up the application. This assignment help me gain knowledge in JS, node.js, heroku, and also using servers.
 
 ## Demo
-
+![Note Taker demo](images/ntd.gif)
 ## Helpful Links
