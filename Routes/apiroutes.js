@@ -12,11 +12,7 @@ router.get('/notes', (req, res) => {
 // This is what will allow you to create a note
 router.post('/notes', (req, res) => {
     var newNote = req.body
-    // if (notes.length) {
-    //     newNote.id = notes[notes.length -1].id + 1
-    // }else{
-    //     newNote.id = 1
-    // }
+    
     newNote.id = Math.floor(Math.random() *125432534251435)
     notes.push(newNote)
     fs.writeFile('./db/db.json', JSON.stringify(notes), err => {
