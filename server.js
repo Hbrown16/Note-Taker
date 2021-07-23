@@ -16,8 +16,8 @@ app.use(express.json());
 app.use(express.static("public"));
 
 
-app.use("/", require("./Routes/HTMLroutes"));
 app.use("/api", require("./Routes/apiroutes"));
+app.use("/", require("./Routes/HTMLroutes"));
 
 //Listener
 
